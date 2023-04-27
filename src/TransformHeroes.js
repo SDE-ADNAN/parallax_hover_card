@@ -1,19 +1,11 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 
-function pointCardToCursor() {
-  const card = document.querySelector('.card');
-  window.addEventListener('mousemove', (event) => {
-    const x = event.clientX;
-    const y = event.clientY;
-    card.style.transform = `translate(${x}px, ${y}px)`;
-  });
-}
 
 function TransformHeroes() {
   useEffect(() => {
     const elements = document.querySelectorAll('.card');
     const perspective = "1000px";
-    const delta = 6;
+    const delta = 20;
 
     elements.forEach((element) => {
       const width = element.offsetWidth;

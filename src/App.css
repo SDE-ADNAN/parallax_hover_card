@@ -16,10 +16,9 @@ body {
   }
   .card {
     position: relative;
-    width: 370px;
-    height: 481px;
-    margin: 50px;
-    background: #CCC;
+    position: relative;
+    width: fit-content;
+    /* height: 90px; */
     transform: rotateX(0) rotateY(0);
     transform-style: preserve-3d;
     transition-duration: 0.1s;
@@ -44,7 +43,7 @@ body {
     
   }
   .card__heading {
-     margin-top: 15%;
+     /* margin-top: 15%; */
       align-items: center;
       text-align: center;
       display: flex;
@@ -84,10 +83,14 @@ body {
     transition-duration: .7s;
   }
   
-  #yourimg1 {
+  /* #yourimg1 {
     background: linear-gradient(180deg, rgba(40, 131, 7, 0.9) 0%, rgba(14, 224, 189, 0.9) 100%);
     background-size: cover;
   
-  }
+  } */
   
   
+.card__heading video{
+  width:750px;
+  border-radius: 15px;
+}
